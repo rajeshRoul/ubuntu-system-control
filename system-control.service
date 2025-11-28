@@ -1,0 +1,14 @@
+[Unit]
+Description=Ubuntu System Control Server
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/rajesh/Dev/desktop
+ExecStart=/usr/bin/python3 /home/rajesh/Dev/desktop/server.py
+Restart=always
+# Environment variable for X11 display interaction (adjust if needed)
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target
