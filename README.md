@@ -1,6 +1,6 @@
 # Ubuntu System Control Server
 
-A Flask-based application that runs as a systemd background service on Ubuntu. It exposes a REST API to control system power, screen state, and execute custom scripts.
+A Flask-based application that runs as a systemd background service on Ubuntu.
 
 ## Setup
 
