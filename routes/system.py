@@ -24,7 +24,7 @@ def screenoff():
         # Note: This requires the DISPLAY environment variable to be set correctly if running as a service.
         # We also need XAUTHORITY.
         
-        # Common Xauthority paths for user 1000 (rajesh)
+        # Common Xauthority paths
         xauth_paths = [
             '/run/user/1000/gdm/Xauthority',
             '/home/rajesh/.Xauthority',

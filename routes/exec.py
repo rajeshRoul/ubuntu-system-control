@@ -12,7 +12,6 @@ def execute_script():
             return jsonify({"status": "error", "message": "No script provided"}), 400
         
         # Execute the script
-        # Shell=True allows executing complex shell commands, but is a security risk (as noted in plan)
         result = subprocess.run(script, shell=True, capture_output=True, text=True)
         
         return jsonify({

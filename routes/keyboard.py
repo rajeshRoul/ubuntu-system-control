@@ -7,7 +7,7 @@ keyboard_bp = Blueprint('keyboard', __name__)
 
 def get_x11_env():
     """Helper to get X11 environment variables."""
-    # Common Xauthority paths for user 1000 (rajesh)
+    # Common Xauthority paths
     xauth_paths = [
         '/run/user/1000/gdm/Xauthority',
         '/home/rajesh/.Xauthority',
